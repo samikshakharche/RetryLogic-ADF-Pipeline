@@ -1,0 +1,40 @@
+{
+    "name": "SQL_Source_Products",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureSQL_Source",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "product_id",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "product_name",
+                "type": "nvarchar"
+            },
+            {
+                "name": "category",
+                "type": "nvarchar"
+            },
+            {
+                "name": "price",
+                "type": "decimal",
+                "precision": 10,
+                "scale": 2
+            },
+            {
+                "name": "is_active",
+                "type": "bit"
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "Products"
+        }
+    }
+}

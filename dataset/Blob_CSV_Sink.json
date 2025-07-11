@@ -1,0 +1,23 @@
+{
+    "name": "Blob_CSV_Sink",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "BlobStorage_Sink",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": "products.csv",
+                "container": "output"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    }
+}

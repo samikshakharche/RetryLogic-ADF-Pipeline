@@ -1,0 +1,4 @@
+product_id,product_name,category,price,is_active
+1,"Pen","Stationery",10.50,True
+2,"Notebook","Stationery",25.00,True
+3,"Marker","Stationery",15.00,False
